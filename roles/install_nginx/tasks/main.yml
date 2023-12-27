@@ -47,3 +47,9 @@
   systemd:
     name: app
     state: started
+
+- name: copy nginx.conf
+  template:
+    src: nginx.conf.j2
+    dest: /etc/nginx/sites-available/default
+  notify: reload nginx
