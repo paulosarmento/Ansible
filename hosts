@@ -1,2 +1,7 @@
-node1
-node2
+54.162.51.75
+3.81.186.166
+54.81.207.39
+
+[all:vars]
+ansible_ssh_private_key_file=/Users/mac/Documents/FullCycle/CursoFullCycle/Ansible/key.pem
+ansible_user=ubuntu
