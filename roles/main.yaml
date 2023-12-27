@@ -1,4 +1,5 @@
 - hosts: all
   become: yes
   roles:
-    - install_nginx
+    # - install_nginx
+    - install_docker
