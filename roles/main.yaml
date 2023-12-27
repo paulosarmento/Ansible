@@ -12,3 +12,8 @@
   become: yes
   roles:
     - docker_swarm_worker
+
+- hosts: manager
+  become: yes
+  roles:
+    - deploy_stack
