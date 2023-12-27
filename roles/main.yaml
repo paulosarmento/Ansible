@@ -7,4 +7,8 @@
   become: yes
   roles:
     - docker_swarm_manager
-    # - install_docker
+
+- hosts: worker
+  become: yes
+  roles:
+    - docker_swarm_worker
